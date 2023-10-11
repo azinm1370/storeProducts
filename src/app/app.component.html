@@ -2,26 +2,21 @@
 
 
 <div class="container-fluid">
-    <div class="row">
-       <!-- <p-megaMenu styleClass="flex">
-    <ng-template pTemplate="start">
-        <p-button  (click)="sidebarVisible = true" icon="pi pi-bars"> 
-            
-        </p-button>
-    </ng-template>
-    <p-sidebar [(visible)]="sidebarVisible">
-        <ng-template pTemplate="header">Header Content</ng-template>
-        <ng-template pTemplate="content"> <header></header> </ng-template>
-        <ng-template pTemplate="footer">Footer Content</ng-template>
-    </p-sidebar>
+    <mat-toolbar>
+        <p-button (click)="sidebarVisible = true" icon="pi pi-bars" styleClass="p-button-rounded p-button-info p-button-text" class="surface-100"  ></p-button>
+        <span>My App</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <p-button type="button"  (click)="sidebarVisible2 = true" class="pi  pi-cog"  styleClass="p-button-rounded p-button-warning p-button-text"></p-button>
+        <p-sidebar [(visible)]="sidebarVisible2" position="right"  [style]="{'width':'250px'}">
+            <h3>Right Sidebar</h3>
+        </p-sidebar>
+      </mat-toolbar>
 
-</p-megaMenu> -->
-<!-- <p-speedDial
-[model]="gfg"
-showIcon="pi pi-arrow-up-right"
-hideIcon="pi pi-times"
-direction="down">
-</p-speedDial> -->
+    <div class="row">
+
 <div class="grid surface-100">
     <div class="col-1">
         <div class="text-center  border-round-sm  font-bold ">
@@ -31,7 +26,6 @@ direction="down">
                 <ng-template pTemplate="content"> <header></header></ng-template>
                 <ng-template pTemplate="footer">Footer Content</ng-template>
             </p-sidebar>
-            <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right" class="surface-100"  ></p-button>
         </div>
     </div>
     <div class="col-8">
@@ -39,39 +33,11 @@ direction="down">
     </div>
     <div class="col-3">
         <div class="text-center  border-round-sm  font-bold ">
-            <div class="grid">
-                <div class="col">
-                    <div class="text-center border-round-sm   font-bold">
-  
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="text-center border-round-sm   font-bold">
-  
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="text-center  border-round-sm  font-bold">
-  
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="text-center  border-round-sm font-bold "></div>
-                </div>
-                <div class="col">
-                    <div class="text-center  border-round-sm  font-bold ">       
-                   <p-sidebar [(visible)]="sidebarVisible2" position="right"  [style]="{'width':'250px'}">
-                        <h3>Right Sidebar</h3>
-                    </p-sidebar>
-                    <p-button type="button" class="" (click)="sidebarVisible2 = true" icon="pi pi-arrow-left"></p-button></div>
-                </div>
-            </div>
-          
-        </div>
+       
     </div>
 </div>
  
-
+</div>
   </div>
 <!-- <footer></footer> -->
 

@@ -56,6 +56,9 @@ import { ListProductsComponent } from './list-products/list-products.component';
 import { ProductsListComponent } from './products-list/products-list.component';
 import { ProductSalesComponent } from './product-sales/product-sales.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -116,7 +119,10 @@ import { LineChartComponent } from './line-chart/line-chart.component';
     CarouselModule,
     TreeSelectModule,
     ContextMenuModule,
-    ChartModule
+    ChartModule,
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule
 
   ],
   providers: [MessageService , ConfirmationService],

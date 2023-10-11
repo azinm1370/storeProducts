@@ -12,7 +12,7 @@ import { UserComponent } from './user/user.component';
 import { ECommerceDashboardComponent } from './ecommerce-dashboard/ecommerce-dashboard.component';
 import { BankingDashboardComponent } from './banking-dashboard/banking-dashboard.component';
 const routes: Routes = [
- {path:"",component:ECommerceDashboardComponent},
+// {path:"",component:ECommerceDashboardComponent},
  {path:"E-CommerceDashboard",component:ECommerceDashboardComponent},
  {path:"BankingDashboard",component:BankingDashboardComponent},
  {path:"phones",component:PhoneComponent},
