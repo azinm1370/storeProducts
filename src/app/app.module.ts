@@ -56,9 +56,9 @@ import { ListProductsComponent } from './list-products/list-products.component';
 import { ProductsListComponent } from './products-list/products-list.component';
 import { ProductSalesComponent } from './product-sales/product-sales.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
+
+//import { NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+//import {IvyCarouselModule} from 'angular-responsive-carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -120,12 +120,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     TreeSelectModule,
     ContextMenuModule,
     ChartModule,
-    MatIconModule,
-    MatButtonModule,
-    MatToolbarModule
-
+  
   ],
-  providers: [MessageService , ConfirmationService],
+  providers: [MessageService, ConfirmationService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

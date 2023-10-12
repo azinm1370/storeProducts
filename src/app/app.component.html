@@ -2,18 +2,23 @@
 
 
 <div class="container-fluid">
-    <mat-toolbar>
-        <p-button (click)="sidebarVisible = true" icon="pi pi-bars" styleClass="p-button-rounded p-button-info p-button-text" class="surface-100"  ></p-button>
-        <span>My App</span>
-        <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-          <mat-icon>favorite</mat-icon>
-        </button>
-        <p-button type="button"  (click)="sidebarVisible2 = true" class="pi  pi-cog"  styleClass="p-button-rounded p-button-warning p-button-text"></p-button>
-        <p-sidebar [(visible)]="sidebarVisible2" position="right"  [style]="{'width':'250px'}">
-            <h3>Right Sidebar</h3>
-        </p-sidebar>
-      </mat-toolbar>
+    <div class="card">
+        <p-megaMenu [model]="items" styleClass="flex">
+
+            <ng-template pTemplate="start">
+                <p-button (click)="sidebarVisible = true" icon="pi pi-bars" styleClass="p-button-rounded p-button-info p-button-text" class="surface-100"  ></p-button>
+
+                <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" height="40" class="mr-2" />
+            </ng-template>
+            <ng-template pTemplate="end">
+                <input type="text" pInputText placeholder="Search" style="margin-right: 10px;" />
+                <p-button type="button"  (click)="sidebarVisible2 = true" class="pi  pi-cog"  styleClass="p-button-rounded p-button-warning p-button-text"></p-button>
+                <p-sidebar [(visible)]="sidebarVisible2" position="right"  [style]="{'width':'250px'}">
+                    <h3>Right Sidebar</h3>
+                </p-sidebar>
+            </ng-template>
+        </p-megaMenu>
+    </div>
 
     <div class="row">
 

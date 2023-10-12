@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatTabsModule } from '@angular/material/tabs';
+// import { MatTabsModule } from '@angular/material/tabs';
 import { MenuItem, MessageService, TreeNode } from 'primeng/api';
 @Component({
   selector: 'header',
