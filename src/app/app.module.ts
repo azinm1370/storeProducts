@@ -59,6 +59,9 @@ import { LineChartComponent } from './line-chart/line-chart.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { IvyCarouselModule } from 'angular-responsive-carousel/lib/carousel.module';
+//import { NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+//import {IvyCarouselModule} from 'angular-responsive-carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -122,7 +125,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     ChartModule,
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    
+    
 
   ],
   providers: [MessageService , ConfirmationService],
