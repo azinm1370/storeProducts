@@ -5,7 +5,7 @@ import { AppService } from '../services/app.service';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { CartList } from '../model/Cart.DataSource';
 import { Cart } from '../model/Cart';
-
+import Swal from 'sweetalert2';
 interface City {
   name: string,
   code: string
@@ -96,7 +96,7 @@ CartList.filter(x => x.Status == true).forEach((item) => {
   CartList.push(basket);
   this.basketNumber = 1;
   this.buyDialog = false;
- // Swal.fire("Product Added to Cart!!", "Product Successfully Added to Cart!", "success");
+  Swal.fire("Product Added to Cart!!", "Product Successfully Added to Cart!", "success");
  
 }
 else {
@@ -108,10 +108,10 @@ else {
         item.Quantity -= -quantity;
         item.TotalPrice=item.Phone.Price*item.Quantity;
         this.basketNumber = 1;
-    //   Swal.fire("Ürün Adedi Arttırıldı!", "Ürün Adedi Başarıyla Arttırıldı!", "success");
+       Swal.fire("Ürün Adedi Arttırıldı!", "Ürün Adedi Başarıyla Arttırıldı!", "success");
       }
       else {
-    //   Swal.fire("Ürün Adedi Arttırılmadı!", "Ürün Stoğu Yetersiz!", "error");
+       Swal.fire("Ürün Adedi Arttırılmadı!", "Ürün Stoğu Yetersiz!", "error");
       }
     }
   })
