@@ -56,6 +56,16 @@ import { ListProductsComponent } from './list-products/list-products.component';
 import { ProductsListComponent } from './products-list/products-list.component';
 import { ProductSalesComponent } from './product-sales/product-sales.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
+<<<<<<< HEAD
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { IvyCarouselModule } from 'angular-responsive-carousel/lib/carousel.module';
+=======
+
+>>>>>>> 20f2147a4b58886c051eeeb696da81de1e1c2be6
+//import { NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+//import {IvyCarouselModule} from 'angular-responsive-carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -116,10 +126,20 @@ import { LineChartComponent } from './line-chart/line-chart.component';
     CarouselModule,
     TreeSelectModule,
     ContextMenuModule,
-    ChartModule
+    ChartModule,
+<<<<<<< HEAD
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule,
+    
+    
 
+=======
+  
+>>>>>>> 20f2147a4b58886c051eeeb696da81de1e1c2be6
   ],
-  providers: [MessageService , ConfirmationService],
+  providers: [MessageService, ConfirmationService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
